@@ -10,6 +10,7 @@ from Hidden_directorys import DirectoryScanner
 from searching_subdomains import SubdomainScanner
 from logo import logo_for_ending
 from Spider import SimpleCrawler
+from Default_paths import DEFAULT_WORDLIST_DIR, DEFAULT_WORDLIST_SUB
 
 #==========================PATH FOR PYINSTALLER IN LINUX==========================
 Pyinstller_path = os.path.expanduser("/root/.wine/drive_c/Python32/Scripts/pyinstaller.exe")
@@ -199,13 +200,13 @@ def finding_directory():
             break
         print("[!] Invalid file name. Use alphanumeric characters and end with a valid extension (e.g., .txt).")
 
-    DEFAULT_WORDLIST = "/home/kali/Key-Logger/directory-list-2.3-medium.txt"
+    #DEFAULT_WORDLIST = "/home/kali/Key-Logger/directory-list-2.3-medium.txt"
 
     if user_input == 'n':
         if not is_valid_file(DEFAULT_WORDLIST):
             print(f"[!] Default wordlist not found at {DEFAULT_WORDLIST}.")
             return
-        Scan = DirectoryScanner(target_url, DEFAULT_WORDLIST, file_result)
+        Scan = DirectoryScanner(target_url, DEFAULT_WORDLIST_DIR, file_result)
         Scan.scan()
     else:
         while True:
@@ -247,13 +248,13 @@ def finding_subs():
             break
         print("[!] Invalid file name. Use alphanumeric characters and end with a valid extension (e.g., .txt).")
 
-    DEFAULT_WORDLIST = "/home/kali/Key-Logger/subdomain_wordlist.txt"
+    #DEFAULT_WORDLIST = "/home/kali/Key-Logger/subdomain_wordlist.txt"
 
     if user_input == 'n':
         if not is_valid_file(DEFAULT_WORDLIST):
             print(f"[!] Default wordlist not found at {DEFAULT_WORDLIST}.")
             return
-        Scan = SubdomainScanner(target_url, DEFAULT_WORDLIST, file_result)
+        Scan = SubdomainScanner(target_url, DEFAULT_WORDLIST_SUB, file_result)
         Scan.scan()
     else:
         while True:
