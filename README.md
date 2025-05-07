@@ -71,9 +71,10 @@ Usage: use 3
 🕷 4. Simple Web Crawler
 Usage: use 4
 
+
 🔍 Wordlist Defaults
 
-You can edit the paths in Default_paths.py:
+You should edit the paths of the downloaded wordlists in Default_paths.py:
 
 DEFAULT_WORDLIST_DIR = "/your/path/to/directory-list.txt"
 
