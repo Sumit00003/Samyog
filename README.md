@@ -14,9 +14,7 @@ Tool	Description
 🚀 Getting Started
 ✅ Prerequisites
 Ensure the following dependencies and requirements are met:
-
 Python 3.x, Wine (for compiling Windows binaries on Linux), PyInstaller (installed via Wine or natively on Windows)
-
 Modules: pyfiglet, rich, keylogger (custom, assumed to be in the project)
 Custom modules: Hidden_directorys, searching_subdomains, logo, Spider, Wordlists (custom or default paths in the tool
 Install dependencies:
@@ -27,6 +25,13 @@ pip install pyfiglet rich
 Clone the repository:
 git clone https://github.com/yourusername/SAMYOGA.git
 cd SAMYOGA
+
+✅ Usage Instructions
+
+Make the script executable:
+chmod +x install.sh
+Run the installation:
+./install.sh
 
 ⚙️ Usage
 
