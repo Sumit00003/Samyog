@@ -72,19 +72,28 @@ Usage: use 3
 Usage: use 4
 
 🔍 Wordlist Defaults
+
 You can edit the paths in Default_paths.py:
+
 DEFAULT_WORDLIST_DIR = "/your/path/to/directory-list.txt"
+
 DEFAULT_WORDLIST_SUB = "/your/path/to/subdomains.txt"
 
 🧰 Modules Structure
 SAMYOGA/
 │
 ├── samyoga.py                # Main file
+
 ├── keylogger.py              # Custom keylogger logic
+
 ├── Hidden_directorys.py      # Hidden directory scanner logic
+
 ├── searching_subdomains.py   # Subdomain scanner logic
+
 ├── Spider.py                 # Web crawler
+
 ├── logo.py                   # ASCII art for exit
+
 ├── Default_paths.py          # Default wordlists
 
 ⚠️ Legal Disclaimer
