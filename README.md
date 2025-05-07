@@ -15,38 +15,23 @@ Tool	Description
 ✅ Prerequisites
 Ensure the following dependencies and requirements are met:
 
-Python 3.x
+Python 3.x, Wine (for compiling Windows binaries on Linux), PyInstaller (installed via Wine or natively on Windows)
 
-Wine (for compiling Windows binaries on Linux)
-
-PyInstaller (installed via Wine or natively on Windows)
-
-Modules:
-
-pyfiglet
-
-rich
-
-keylogger (custom, assumed to be in the project)
-
-Custom modules: Hidden_directorys, searching_subdomains, logo, Spider
-
-Wordlists (custom or default paths in the tool)
-
+Modules: pyfiglet, rich, keylogger (custom, assumed to be in the project)
+Custom modules: Hidden_directorys, searching_subdomains, logo, Spider, Wordlists (custom or default paths in the tool
 Install dependencies:
-
 pip install pyfiglet rich
 
 🛠 Installation
-Clone the repository:
 
+Clone the repository:
 git clone https://github.com/yourusername/SAMYOGA.git
 cd SAMYOGA
 
 ⚙️ Usage
+
 Run the tool using:
 python samyoga.py
-
 You will see an ASCII welcome screen and available commands like:
 Available Commands:
  use : Use a specific tool
@@ -54,39 +39,22 @@ Available Commands:
  exit : Completely exit Tool
 
 🧪 Tool Details
+
 🔑 1. Keylogger Generator (Windows Only)
 Usage:
 use 1
-Prompts for:
-Email
-App-specific password
-Time interval
-Output file name (will be compiled to .exe)
+And Provide the input details carefully.
 
 ⚠️ Don't upload keyloggers to VirusTotal as it exposes signatures to antivirus vendors.
 
 📁 2. Hidden Directory Finder
-Usage:
-use 2
-Prompts for:
-Target URL (must include http:// or https://)
-Option to use custom wordlist
-Output filename
+Usage: use 2
 
 🌐 3. Subdomain Finder
-Usage:
-use 3
-Prompts for:
-Domain (without http://)
-Option to use custom wordlist
-Output filename
+Usage: use 3
 
 🕷 4. Simple Web Crawler
-Usage:
-use 4
-Prompts for:
-Target URL
-Output file to save the crawled links
+Usage: use 4
 
 🔍 Wordlist Defaults
 You can edit the paths in Default_paths.py:
@@ -94,9 +62,6 @@ DEFAULT_WORDLIST_DIR = "/your/path/to/directory-list.txt"
 DEFAULT_WORDLIST_SUB = "/your/path/to/subdomains.txt"
 
 🧰 Modules Structure
-graphql
-Copy
-Edit
 SAMYOGA/
 │
 ├── samyoga.py                # Main file
