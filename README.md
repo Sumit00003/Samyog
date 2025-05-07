@@ -30,6 +30,7 @@ cd SAMYOGA
 
 Make the script executable:
 chmod +x install.sh
+
 Run the installation:
 ./install.sh
 
