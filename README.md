@@ -79,7 +79,9 @@ DEFAULT_WORDLIST_DIR = "/your/path/to/directory-list.txt"
 
 DEFAULT_WORDLIST_SUB = "/your/path/to/subdomains.txt"
 
+
 🧰 Modules Structure
+
 SAMYOGA/
 │
 ├── samyoga.py                # Main file
@@ -96,8 +98,10 @@ SAMYOGA/
 
 ├── Default_paths.py          # Default wordlists
 
+
 ⚠️ Legal Disclaimer
 This tool is intended for educational use only. Usage without permission is strictly prohibited and illegal. The authors are not responsible for any misuse.
+
 
 🙋‍♂️ Author
 Your Name — @Sumit00003
