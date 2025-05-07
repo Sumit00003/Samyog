@@ -1,6 +1,6 @@
-💻 SAMYOGA - Offensive Security Toolkit
+💻 SAMYOGA - EH Toolkit
 
-SAMYOGA is a terminal-based offensive security toolkit that provides a unified interface for various penetration testing utilities such as keylogger creation, hidden directory discovery, subdomain enumeration, and a basic web crawler.
+SAMYOGA is a command-line terminal that provides a unified interface for various penetration testing utilities such as keylogger creation, hidden directory discovery, subdomain enumeration, and a basic web crawler.
 
 ⚠️ Disclaimer: This tool is for educational and ethical hacking purposes only. Unauthorized usage against systems without explicit permission is illegal.
 
