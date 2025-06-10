@@ -16,35 +16,41 @@ Tool	Description
 
 Ensure the following dependencies and requirements are met:
 
-Python 3.x, Wine (for compiling Windows binaries on Linux), PyInstaller (installed via Wine or natively on Windows)
+Python 3.x, Wine (for compiling Windows binaries on Linux), PyInstaller (installed via Wine)
 
-Modules: pyfiglet, rich, keylogger (custom, assumed to be in the project)
-
-Custom modules: Hidden_directorys, searching_subdomains, logo, Spider, Wordlists (custom or default paths in the tool
+Modules: pyfiglet, rich, keylogger  
 Install dependencies:
 
+```
 pip install pyfiglet rich
+```
 
 🛠 Installation
 
 Clone the repository:
+```
 git clone https://github.com/yourusername/SAMYOGA.git
-
+```
+```
 cd SAMYOGA
+```
 
 ✅ Usage Instructions
 
-Make the script executable:
+Make the script executable:  
+```
 chmod +x install.sh
+```
 
-Run the installation:
+Run the installation:  
+```
 ./install.sh
-
-⚙️ Usage
+```
 
 Run the tool using:
-
+```
 python samyoga.py
+```
 
 You will see an ASCII welcome screen and available commands like:
 
@@ -81,28 +87,9 @@ DEFAULT_WORDLIST_DIR = "/your/path/to/directory-list.txt"
 DEFAULT_WORDLIST_SUB = "/your/path/to/subdomains.txt"
 
 
-🧰 Modules Structure
-
-SAMYOGA/
-│
-├── samyoga.py                # Main file
-
-├── keylogger.py              # Custom keylogger logic
-
-├── Hidden_directorys.py      # Hidden directory scanner logic
-
-├── searching_subdomains.py   # Subdomain scanner logic
-
-├── Spider.py                 # Web crawler
-
-├── logo.py                   # ASCII art for exit
-
-├── Default_paths.py          # Default wordlists
-
-
 ⚠️ Legal Disclaimer
-This tool is intended for educational use only. Usage without permission is strictly prohibited and illegal. The authors are not responsible for any misuse.
 
+This tool is intended for educational use only. Usage without permission is strictly prohibited and illegal. The authors are not responsible for any misuse.
 
 🙋‍♂️ Author
 Your Name — @Sumit00003
