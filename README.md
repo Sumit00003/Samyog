@@ -4,11 +4,12 @@ SAMYOGA is a command-line terminal that provides a unified interface for various
 
 ⚠️ Disclaimer: This tool is for educational and ethical hacking purposes only. Unauthorized usage against systems without explicit permission is illegal.
 
-📋 Features
-Tool	Description
-1	Windows Keylogger Generator: Generates a simple Python keylogger and compiles it into a Windows executable.
-2	Hidden Directory Finder: Scans for hidden directories using default or custom wordlists.
-3	Subdomain Finder: Searches for subdomains using a default or custom wordlist.
+📋 Features  
+
+Tool	Description  
+1	Windows Keylogger Generator: Generates a simple Python keylogger and compiles it into a Windows executable.  
+2	Hidden Directory Finder: Scans for hidden directories using default or custom wordlists.  
+3	Subdomain Finder: Searches for subdomains using a default or custom wordlist.  
 4	Web Crawler (Spider): Crawls a target URL and lists discovered internal links.
 
 🚀 Getting Started
@@ -54,27 +55,27 @@ python samyoga.py
 
 You will see an ASCII welcome screen and available commands like:
 
-Available Commands:
- use : Use a specific tool
- info : Information on a specific tool
- exit : Completely exit Tool
+Available Commands:  
+ use : Use a specific tool  
+ info : Information on a specific tool  
+ exit : Completely exit Tool  
 
 🧪 Tool Details
 
 🔑 1. Keylogger Generator (Windows Only)
-Usage:
-use 1
+Usage:  
+use 1  
 And Provide the input details carefully.
 
 ⚠️ Don't upload keyloggers to VirusTotal as it exposes signatures to antivirus vendors.
 
-📁 2. Hidden Directory Finder
+📁 2. Hidden Directory Finder  
 Usage: use 2
 
-🌐 3. Subdomain Finder
+🌐 3. Subdomain Finder  
 Usage: use 3
 
-🕷 4. Simple Web Crawler
+🕷 4. Simple Web Crawler  
 Usage: use 4
 
 
